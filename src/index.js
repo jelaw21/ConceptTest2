@@ -1,4 +1,12 @@
 import 'phaser'
-import config from './config'
+import Preload  from './scenes/preload'
 
-let game = new Phaser.Game(config)
+const config = {
+    width: window.innerWidth,
+    height: window.innerHeight,
+    scene: [
+        Preload
+    ]
+};
+
+let game = new Phaser.Game(config);
