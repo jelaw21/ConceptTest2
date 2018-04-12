@@ -8,7 +8,7 @@ export default class Game extends Phaser.Scene {
     preload() {}
 
     create() {
-        console.log('game started')
+
 
         let config = {
             key: 'engineer_walk_down',
@@ -16,9 +16,9 @@ export default class Game extends Phaser.Scene {
                 start: 0,
                 end: 3
             }),
-            repeat: -1,
-            frameRate: 5
-        }
+            repeat: 10,
+            frameRate: 50
+        };
 
         this.anims.create(config)
         let player = new Player(this, 100, 100, 'engineer', 0)
